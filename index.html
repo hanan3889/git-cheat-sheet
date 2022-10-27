@@ -87,16 +87,107 @@
             <p>La commande git commit permet de valider les modifications apportées au HEAD.<br>
                Notez que tout commit ne se fera pas dans le dépôt distant.</p>
           </div>
-          
+          <div class="col text-center">
+            <pre class="">git status</pre>
+            <p>La commande git status affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être ajoutés ou validés.</p>
+          </div>
+          <div class="col text-center">
+            <pre class="">git push origin master</pre>
+            <p>Git push est une autre commandes GIT de base. <br>
+              Un simple push envoie les modifications locales apportées à la branche principale associée :</p>
+          </div>
+          <div>
+          <pre class="">command git checkout -b nom-branche</pre>
+          <p>La commande git checkout peut être utilisée pour créer des branches ou pour basculer entre elles. <br>
+            Par exemple nous allons créer une branche</p>
+           </div>
+           <div>
+            <pre class="">git checkout nom-branche</pre>
+            <p>Pour passer simplement d’une branche à une autre.</p>
+             </div>
+             <div>
+              <pre class="">git remote –v</pre>
+              <p>Cette commande remote permet à un utilisateur de se connecter à un dépôt distant. <br>
+                La commande suivante répertorie les dépôts distants actuellement configurés:</p>
+               </div>
+               <div>
+                <pre class="">git remote add origin 93.188.160.58</pre>
+                <p>Cette commande permet à l’utilisateur de connecter le dépôt local à un serveur distant.</p>
+                 </div>
+                 <div>
+                  <pre class="">git branch</pre>
+                  <p>La commande git branch peut être utilisée pour répertorier, créer ou supprimer des branches.<br>
+                     Pour répertorier toutes les branches présentes dans le dépôt.</p>
+                   </div>
+                   <div>
+                   <pre class="">git branch –d nom-branche</pre>
+                   <p>Pour supprimer une branche.</p>
+                    </div>
+                    <div>
+                    <pre class="">git pull</pre>
+                     <p>Pour fusionner toutes les modifications présentes sur le dépôt distant dans le répertoire de travail local, 
+                      la commande pull est utilisée.</p>
+                    </div>
+                    <div>
+                      <pre class="">git merge nom-branche </pre>
+                       <p>La commande git merge est utilisée pour fusionner une branche dans la branche active.</p>
+                      </div>
+                      <div>
+                        <pre class="">git diff --base nom-fichier</pre>
+                         <p>La commande git diff permet de lister les conflits. Pour visualiser les conflits d’un fichier.</p>
+                        </div>
+                        <div>
+                          <pre class="">git diff branche-source branche-cible</pre>
+                           <p>La commande suivante est utilisée pour afficher les conflits entre les branches à fusionner avant de les fusionner.</p>
+                          </div>
+                          <div>
+                            <pre class="">git diff</pre>
+                             <p>Pour simplement énumérer tous les conflits actuels, utilisez.</p>
+                            </div>
+                            <div>
+                              <pre class="">git reset --hard HEAD</pre>
+                               <p>Pour réinitialiser l’index et le répertoire de travail à l’état du dernier commit.</p>
+                              </div>
+                              <div>
+                                <pre class="">git reset --hard HEAD</pre>
+                                 <p>Pour réinitialiser l’index et le répertoire de travail à l’état du dernier commit.</p>
+                                </div>
+                                <div>
+                                  <pre class="">git log</pre>
+                                   <p>L’exécution de cette commande génère le log d’une branche.</p>
+                                  </div>
+                                  <div>
+                                    <pre class="">git rm nom fichier.txt</pre>
+                                     <p>Git rm peut être utilisé pour supprimer des fichiers de l’index et du répertoire de travail.</p>
+                                    </div>
+                                    <div>
+                                      <pre class="">git fetch origin</pre>
+                                       <p>Git fetch permet à un utilisateur d’extraire tous les fichiers du dépôt distant qui ne sont pas actuellement dans le répertoire de travail local.</p>
+                                      </div>
+                                      <div>
+                                        <pre class="">git show</pre>
+                                         <p>Pour afficher des informations sur tout fichier git, utilisez la commande git show.</p>
+                                        </div>
+                    
+                         
+                    </div>
+         </div>
         </div>
       </div>
-    </div>
-
-     
+    </div>   
       </div>
     </main>
     <!-------------End main------------->
-    <footer><!-------------Start footer-------------></footer>
+    <footer><!-------------Start footer------------->
+      <div class="footer">
+        <div class="container py-2">
+          <div class="row py-2">
+            <div class="col">
+              <h3>À propos de nous</h3>
+              <p>Notre équipe est composée de 3 étudiants en BTS SIO option SLAM. Nous avons réalisé ce site dans le cadre de notre projet de fin d'année.</p>
+            </div>
+     
+    </footer>
     <!-------------End footer------------->
   </body>
 </html>
